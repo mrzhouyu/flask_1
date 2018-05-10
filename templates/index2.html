@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+
+    <div>
+        <form action="{{ url_for('index2') }}" method="POST">
+            <label for="id">输入ID：</label>
+            <input type="text" name="id"/>
+        </form>
+    </div>
+
+    <h2>{% if id %} ID是: {{ id }}{% else %}Hello Strong{% endif %}</h2>
+
+
+</body>
+</html>
